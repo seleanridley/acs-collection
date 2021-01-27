@@ -49,7 +49,7 @@ def acs_moe(estimates, census_table):
     t_3 = t.apply(lambda x: getMOE(x, census_table))
     t_2 = t_2.max(axis=1)
 
-    m = (t_3.apply(np.square).sum(axis=1) + t_2.apply(np.square)).apply(np.sqrt)
+    m = (t_3.apply(np.square).sum(axis=1) + t_2.apply(np.square)) #.apply(np.sqrt)
     
     iz = g.append(m)
     iz = iz.apply(np.sqrt)
