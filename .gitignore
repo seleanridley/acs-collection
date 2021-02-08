@@ -1,5 +1,4 @@
 
-*.csv
 table_to_censusid.p
 PopEst.ipynb
 PopEst.R
